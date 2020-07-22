@@ -1,9 +1,4 @@
 <?php
-/**
- * @package        Sendy
- * @copyright (C) 2014 by Source Coast - All rights reserved
- * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- */
 
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die('Restricted access');
@@ -36,10 +31,12 @@ class plgUserSendy extends JPlugin
         if ($this->isActivating)
         {
             $list = $this->params->get('list_id');
-            if ($list)
+            $apiKey = $this->params->get('api_key');
+            if ($list && $apiKey)
             {
+                $userName = $user['name'];
                 $email = $user['email'];
-                Sendy::getInstance()->subscribeUser($email, $list);
+                Sendy::getInstance()->subscribeUser($userName, $email, $list, $apiKey);
             }
         }
     }

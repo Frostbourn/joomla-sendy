@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="1.6" type="package" method="upgrade">
+<extension version="3" type="package" method="upgrade">
     <name>Sendy Integration for Joomla</name>
     <packagename>Sendy Integration for Joomla</packagename>
-    <version>1.0.3</version>
-    <creationDate>2014/05/19</creationDate>
-    <author>SourceCoast | www.sourcecoast.com</author>
-    <authorEmail>support@sourcecoast.com</authorEmail>
-    <authorUrl>http://www.sourcecoast.com</authorUrl>
-    <url>http://www.sourcecoast.com</url>
-    <packageurl>http://www.sourcecoast.com</packageurl>
-    <copyright>Copyright (C) 2011-2014 SourceCoast. All rights reserved.</copyright>
+    <version>2.0.0</version>
+    <creationDate>22.07.2020</creationDate>
+    <author>Jakub Skowroński | www.jsns.eu</author>
+    <authorEmail>support@jsns.eu</authorEmail>
+    <authorUrl>https://www.jsns.eu</authorUrl>
+    <copyright>2020 JS Soft. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <description>Sendy library</description>
     <files folder="packages">
-       <file type="module" id="mod_sendy" client="site">mod_sendy.zip</file>
        <file type="library" id="sendy">lib_sendy.zip</file>
        <file type="plugin" id="sendy" group="system">plg_system_sendy.zip</file>
        <file type="plugin" id="sendy" group="user">plg_user_sendy.zip</file>

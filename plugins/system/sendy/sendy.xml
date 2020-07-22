@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="1.6" type="plugin" group="system" method="upgrade" client="site">
+<extension version="3" type="plugin" group="system" method="upgrade" client="site">
     <name>System - Sendy</name>
-    <version>1.0.3</version>
-    <creationDate>2014/05/19</creationDate>
-    <author>SourceCoast | www.sourcecoast.com</author>
-    <authorEmail>support@sourcecoast.com</authorEmail>
-    <authorUrl>http://www.sourcecoast.com</authorUrl>
-    <copyright>2014 SourceCoast. All rights reserved.</copyright>
+    <version>2.0.0</version>
+    <creationDate>22.07.2020</creationDate>
+    <author>Jakub Skowroński | www.jsns.eu</author>
+    <authorEmail>support@jsns.eu</authorEmail>
+    <authorUrl>https://www.jsns.eu</authorUrl>
+    <copyright>2020 JS Soft. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <description>
-        <![CDATA[<div style="border: 1px solid #6ba6d7; text-align: justify;"><div style="text-align:center; font-size: 18px; color: white; background:#6ba6d7; padding: 5px;">Sendy System Plugin</div><div style="padding: 4px; background:white; font-size: 12px;">Sendy integration for Joomla.<br/>Use this plugin to configure each of the Sendy Lists that you want to subscribe/unsubscribe users from on your site. Signing new users up can be done by using the Sendy Module or through some simple API calls in any extension.<br/><br/><b>For more information, see:</b><ol><li><a href="https://www.sourcecoast.com/go/sendy" target="_BLANK">Sendy Documentation</a></li><li><a href="http://www.sourcecoast.com/sendy/" target="_BLANK">Sendy Integration Information</a></li></ol>If you use our free Sendy Integration for Joomla extension, please post a rating and a review at the Joomla! Extensions Directory: <a href="http://extensions.joomla.org/extensions/marketing/mailing-a-newsletter-bridges/26742" target="_blank">Sendy JED Listing</a></div></div>]]>
-        </description>
+        <![CDATA[<div style="border: 1px solid #6ba6d7; text-align: justify;"><div style="text-align:center; font-size: 18px; color: white; background:#6ba6d7; padding: 5px;">Sendy System Plugin</div><div style="padding: 4px; background:white; font-size: 12px;">Sendy integration for Joomla.<br/>Use this plugin to auto-subscribe users to a specified list on registration.<br/><br/></div></div>]]>
+    </description>
     <files>
         <filename plugin="sendy">sendy.php</filename>
     </files>

@@ -48,7 +48,7 @@ class Sendy
         }
     }
 
-    public function subscribeUser($email, $listId)
+    public function subscribeUser($userName, $email, $listId, $apiKey = '')
     {
         $list = null;
         $lists = $this->getLists();
@@ -59,6 +59,8 @@ class Sendy
         {
             $http = JHttpFactory::getHttp();
             $data = array();
+            $data['api_key'] = $apiKey;
+            $data['name'] = $userName;
             $data['email'] = $email;
             $data['list'] = $list->id;
             $data['boolean'] = 'true';
@@ -72,7 +74,7 @@ class Sendy
         return $return;
     }
 
-    public function unsubscribeUser($email, $listId)
+    public function unsubscribeUser($userName, $email, $listId)
     {
         $list = null;
 
@@ -84,6 +86,7 @@ class Sendy
         {
             $http = JHttpFactory::getHttp();
             $data = array();
+            $data['name'] = $userName;
             $data['email'] = $email;
             $data['list'] = $list->id;
             $data['boolean'] = 'true';
