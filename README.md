@@ -1,5 +1,7 @@
 # Sendy.co Integration for Joomla
 
+### All creadits goes to [sourcecoast](https://github.com/sourcecoast/joomla-sendy)
+
 For more information on Sendy, the self-hosted newsletter software that costs just pennies to send 10k+ emails, see:  
 [Sendy Self-Hosted Newsletters](https://sendy.co/?ref=kRfwN)
 
